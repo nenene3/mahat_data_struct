@@ -23,6 +23,7 @@ public class Main {
                 player2.addCard(c2);
             }
 
+            //not optimized should move to another function when 
             for(int i=0;i<4;i++){
                 if(player1.isFull(chars[i])){
                     System.out.println("משתמש אחד ניצח");
