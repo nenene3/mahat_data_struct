@@ -4,8 +4,15 @@ import data_Structs.BinNode;
 
 public class BlackWhite {
     public static void main(String[] args) {
-        BinNode<Character> head = new BinNode<>('c');
-
+        BinNode<Character> bDD100H = new BinNode<>('b');
+        bDD100H.setLeft(new BinNode<>('w'));
+        bDD100H.setRight(new BinNode<>('w'));
+        bDD100H.getLeft().setLeft(new BinNode<>('b'));
+        bDD100H.getLeft().setRight(new BinNode<>('b'));
+        bDD100H.getRight().setRight(new BinNode<>('b'));
+        bDD100H.getRight().setLeft(new BinNode<>('b'));
+        System.out.println("IsBlueAndWhite 0 ? : " + isBlackWhite(bDD100H));
+        System.out.println();
     }
 
     public static boolean isBlackWhite(BinNode<Character> head) {
