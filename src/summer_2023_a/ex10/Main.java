@@ -8,7 +8,7 @@ public class Main {
     public static void game(Deck d){
         Deck player1 = new Deck();
         Deck player2 = new Deck();
-        char[] chars = new char[]{'r','g','b','y'};
+        char[] chars = new char[]{'R','G','B','Y'};
         while(true){
             Card c1 = d.drawCard();
             Card c2 = d.drawCard();
