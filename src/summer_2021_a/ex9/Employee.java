@@ -1,7 +1,7 @@
 package summer_2021_a.ex9;
 
 public class Employee {
-    private static int index;
+    private static int index=0;
     private String name;
     private int  num;
 
